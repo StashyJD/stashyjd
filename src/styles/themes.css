@@ -1,18 +1,26 @@
 :root[data-theme='light'] {
   color-scheme: light;
-  --bg-app: #f3f5f9;
-  --bg-surface: #fcfcfd;
-  --bg-muted: #eef1f6;
-  --bg-elevated: #f8fafc;
-  --border-subtle: #e2e8f0;
-  --border-default: #cfd6e4;
-  --border-strong: #6b7280;
-  --text-primary: #111827;
-  --text-secondary: #4b5563;
-  --text-tertiary: #6b7280;
-  --text-subtle: #9ca3af;
-  --icon-default: #4b5563;
-  --icon-muted: #6b7280;
+
+  /* Background hierarchy */
+  --bg-app: #f3efe7; /* warm canvas */
+  --bg-surface: #fffdf8; /* paper surface */
+  --bg-muted: #ebe5da; /* muted sections */
+  --bg-elevated: #f8f5ee; /* cards/popovers */
+
+  /* Borders */
+  --border-subtle: #e5ded1;
+  --border-default: #d2c8b8;
+  --border-strong: #8a8174;
+
+  /* Typography */
+  --text-primary: #171512;
+  --text-secondary: #4f4a42;
+  --text-tertiary: #746d62;
+  --text-subtle: #a29a8d;
+
+  /* Icons */
+  --icon-default: #4f4a42;
+  --icon-muted: #8a8174;
 }
 
 :root[data-theme='dark'] {

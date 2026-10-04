@@ -53,16 +53,16 @@ pub fn run() {
         .invoke_handler(tauri::generate_handler![
             greet,
             //applications
-            commands::application::create_application,
-            commands::application::fetch_applications,
+            commands::application_commands::create_application,
+            commands::application_commands::fetch_applications,
             //documents
-            commands::document::create_document,
-            commands::document::fetch_documents,
+            commands::document_commands::create_document,
+            commands::document_commands::fetch_documents,
             //tasks
-            commands::task::create_task,
-            commands::task::get_tasks,
-            commands::task::set_task_completed,
-            commands::task::delete_task
+            commands::task_commands::create_task,
+            commands::task_commands::get_tasks,
+            commands::task_commands::set_task_completed,
+            commands::task_commands::delete_task
         ])
         .run(tauri::generate_context!())
         .expect("error while running tauri application");
